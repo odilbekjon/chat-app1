@@ -1,10 +1,11 @@
 const { Server } = require('socket.io')
 const express = require('express')
 const app = express()
+const PORT = process.env.PORT || 1010
 
 app.use(express.static(__dirname + '/public'))
 
-const server = app.listen(1010, console.log(1010))
+const server = app.listen(PORT, console.log(PORT))
 
 const io = new Server(server)
 
