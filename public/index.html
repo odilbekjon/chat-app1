@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Chat app</title>
+</head>
+<body>
+   
+    <header>
+        <h1>Super Duper Simple Chat</h1>
+        <h2>Powered by PubNub</h2>
+      </header>
+      
+      <section id="main" role="main">
+         <div class="chat__people">
+            <h4 id="h4"></h4>
+         </div>
+        <div class="chat">
+          <i class='bx bx-conversation'></i>
+          <form action="" id="form">
+            <input type="text" placeholder="Type your message..." id="input"> 
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        
+      
+        <p class="presence"></p>
+        <div class="output"></div>
+      </section>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
